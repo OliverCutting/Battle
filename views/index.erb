@@ -1,0 +1,10 @@
+
+<% if @player1 %>
+<h1> "player1 = '<% @player1 %>', player2 = '<% @player2 %>'" </h1>
+<% end %>
+
+<form action="/names" method="post">
+  <input type="text" name="player1">
+  <input type="text" name="player2">
+  <input type="submit" value="submit">
+</form>
